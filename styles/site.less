@@ -1,9 +1,91 @@
 // Insert your styles here, using LESS
-
-body {
-
+html, body {
+    background-color: gray;
+    min-height: 100%;
 }
 
-.tester {
-  color: blue;
+.column, .grid {
+    height: 100%;
+}
+
+.column.login-column {
+    max-width: 400px !important;
+    margin: 200px;
+}
+
+.ui.teal.header {
+    color: purple !important;
+}
+
+.ui.teal.button {
+    background-color: purple !important;
+}
+
+.room-container {
+    overflow-y: scroll;
+    margin-left: 0;
+    height: 90%;
+}
+
+.chat-container {
+    background-color: blue;
+    margin-right: 0;
+    width: 100% !important;
+}
+
+.ui.menu {
+    background: #purple;
+}
+
+.right-menu {
+    display: inline-block;;
+}
+
+.ui.items>.room-item .extra {
+    margin-top: 2px;
+}
+
+.ui.items>.room-item {
+    margin: 0;
+    padding: 5px;
+}
+
+.hidden{
+    display: none;
+}
+
+.ui.raised.segment {
+    height: 84%;
+    overflow-y: scroll;
+}
+
+.side-bar {
+    background: #734BA8;
+}
+
+.right-side {
+    background: #655875;
+}
+
+.item.logo-item {
+    padding: 0 !important;
+    margin-right: 10px !important;
+}
+
+.left-container {
+    height: 90%;
+}
+
+.ui.menu .item.logout {
+    margin-left: 20px !important;
+}
+
+.room-drop-button {
+    display: inline;
+    float: right;
+    margin-right: 10px;
+}
+
+.room-init-item {
+    max-width: 600px;
 }
