@@ -1,19 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import '../styles/site';
-//import login_container from './components/login_container/login_container';
+import LoginContainer from './components/LoginContainer/LoginContainer';
 
 class App extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            username: 'villi'
+            username: ''
         };
 
     }
     render() {
         var user = this.state.username;
 
+        // If username is not set
         if (user) {
             return (
                 //<login_container />
@@ -22,7 +23,7 @@ class App extends React.Component {
         } else {
             return (
                 //<login_container />
-                <p>not</p>
+                <LoginContainer />
             );
         }
 
