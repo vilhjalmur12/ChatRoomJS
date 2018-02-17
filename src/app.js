@@ -12,13 +12,11 @@ class App extends React.Component {
 
     }
     render() {
-        var user = this.state.username;
-
         // If username is not set
-        if (user) {
+        if (this.state.username) {
             return (
                 //<login_container />
-                <p>is</p>
+                <p>{user}</p>
             );
         } else {
             return (

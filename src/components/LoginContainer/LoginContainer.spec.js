@@ -9,7 +9,6 @@ describe('Test login_container', () => {
     });
 
     it('should contain a div with container class', () => {
-
         expect(comp.contains(<div className="container"></div>)).toBe(true);
     });
 });
