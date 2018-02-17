@@ -21,7 +21,7 @@ $('.left-menu-button').click( function(e) {
 
 // Right menu bar
 $('.right-menu-button').click( function(e) {
-    
+
 });
 
 $('.right-menu-button').hover( function(e) {
