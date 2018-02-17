@@ -1,91 +1,28 @@
 // Insert your styles here, using LESS
 html, body {
-    background-color: gray;
+    color: #213443;
     min-height: 100%;
-}
-
-.column, .grid {
     height: 100%;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(#734052, #F4EAC8);
 }
 
-.column.login-column {
-    max-width: 400px !important;
-    margin: 200px;
+.login-card {
+    top: 25vh;
+    background: #F7F7F7;
+    padding: 20px 25px 30px;
+    margin: 0 auto 25px;
+    margin-top: 50px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    flex-direction: row;
 }
 
-.ui.teal.header {
-    color: purple !important;
-}
-
-.ui.teal.button {
-    background-color: purple !important;
-}
-
-.room-container {
-    overflow-y: scroll;
-    margin-left: 0;
-    height: 90%;
-}
-
-.chat-container {
-    background-color: blue;
-    margin-right: 0;
-    width: 100% !important;
-}
-
-.ui.menu {
-    background: #purple;
-}
-
-.right-menu {
-    display: inline-block;;
-}
-
-.ui.items>.room-item .extra {
-    margin-top: 2px;
-}
-
-.ui.items>.room-item {
-    margin: 0;
-    padding: 5px;
-}
-
-.hidden{
-    display: none;
-}
-
-.ui.raised.segment {
-    height: 84%;
-    overflow-y: scroll;
-}
-
-.side-bar {
-    background: #734BA8;
-}
-
-.right-side {
-    background: #655875;
-}
-
-.item.logo-item {
-    padding: 0 !important;
-    margin-right: 10px !important;
-}
-
-.left-container {
-    height: 90%;
-}
-
-.ui.menu .item.logout {
-    margin-left: 20px !important;
-}
-
-.room-drop-button {
-    display: inline;
-    float: right;
-    margin-right: 10px;
-}
-
-.room-init-item {
-    max-width: 600px;
+.card.card-container.login-card {
+    max-width: 700px;
+    padding: 40px 40px;
 }
