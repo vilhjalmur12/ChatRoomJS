@@ -7,16 +7,30 @@ class App extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            username: ''
+            username: localStorage.getItem('username'),
+            avatar: localStorage.getItem('avatar')
         };
 
+
     }
+
+    setAvatar(user) {
+        this.setState({ username: user });
+    }
+
+    clearSession() {
+        localStorage.clear();
+        
+    }
+
     render() {
         // If username is not set
         if (this.state.username) {
             return (
                 //<login_container />
-                <p>{user}</p>
+                <button onClick={this.clearSession()} >{this.state.username}</button>
+
+
             );
         } else {
             return (
