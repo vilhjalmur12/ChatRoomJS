@@ -7,6 +7,38 @@ html, body {
     background-image: linear-gradient(#734052, #F4EAC8);
 }
 
+#app {
+    height: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+.main-row, .main-container {
+    height: 100%;
+}
+
+.right-col {
+    background: #F4EAC8;
+}
+
+.left-col {
+    background: #734052;
+}
+
+.right-nav-container, .left-nav-container {
+    border-bottom: 1px solid black;
+}
+
+.left-nav {
+    margin-bottom: 0 !important;
+}
+
+.logout-button {
+    margin-left: 30px;
+}
+
 .login-card {
     top: 25vh;
     background: #F7F7F7;
@@ -57,4 +89,159 @@ html, body {
 .flex-container-login > div > img {
     width: 100%;
     padding: 7px;
+}
+
+.left-item-container {
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 20px;
+    min-height: 79%;
+    border-radius: 10px;
+    background: white;
+}
+
+.right-main-container {
+    background: white;
+    height: 81%;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    overflow-y: scroll;
+}
+
+.main-text-container {
+    margin-top: 10px;
+}
+
+.messages {
+    height: auto;
+    min-height: calc(100% - 93px);
+    max-height: calc(100% - 93px);
+}
+
+.messages ul li {
+    display: inline-block;
+  clear: both;
+  float: left;
+  margin: 15px 15px 5px 15px;
+  width: calc(100% - 25px);
+  font-size: 0.9em;
+}
+
+.messages ul li:nth-last-child(1) {
+    margin-bottom: 20px;
+}
+
+.messages ul li.sent img {
+    margin: 6px 8px 0 0;
+}
+
+.messages ul li.sent p {
+    background: #435f7a;
+    color: #f5f5f5;
+}
+
+.messages ul li.replies img {
+    float: right;
+    margin: 6px 0 0 8px;
+}
+
+.messages ul li.replies p {
+    background: #f5f5f5;
+    float: right;
+}
+
+.messages ul li img {
+    width: 45px;
+    border-radius: 50%;
+    float: left;
+}
+
+.messages ul li p {
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 20px;
+    max-width: 205px;
+    line-height: 130%;
+}
+
+.message-input {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  z-index: 99;
+}
+
+.commentList {
+    padding:0;
+    list-style:none;
+    max-height:200px;
+}
+.commentList li {
+    margin:0;
+    margin-top:10px;
+}
+.commentList li > div {
+    display:table-cell;
+}
+.commenterImage {
+    width:30px;
+    margin-right:5px;
+    height:100%;
+    float:left;
+}
+.commenterImage img {
+    width:100%;
+    border-radius:50%;
+}
+.commentText p {
+    margin:0;
+}
+
+.sub-text {
+    color:#aaa;
+    font-family:verdana;
+    font-size:11px;
+}
+
+.sent>.sub-text {
+    display: block;
+    margin-left: 55px;
+}
+
+
+.replies>.sub-text {
+    float: right;
+    display: block;
+    margin-left: 55px;
+}
+
+.main-text-container {
+    margin-top: 10px;
+}
+
+.private-message-img {
+    width: 32px;
+    height: 32px;
+}
+
+.left-search {
+    margin-top: 1rem;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: black;
+    background: none;
+}
+
+@media screen and (max-width: 735px) {
+  .messages {
+    max-height: calc(100% - 105px);
+  }
+}
+
+@media screen and (min-width: 735px) {
+  .messages ul li p {
+    max-width: 300px;
+  }
 }

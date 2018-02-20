@@ -24,7 +24,7 @@ class LoginCard extends React.Component {
     render() {
         return (
             <div className="left-login-card">
-                    
+
                     <p id="profile-name" className="profile-name-card"></p>
                     <form className="form-signin">
                         <input onChange={e => this.onInputChange(e.target.value)} type="text" id="inputEmail" className="form-control" placeholder="Username" required autoFocus></input>

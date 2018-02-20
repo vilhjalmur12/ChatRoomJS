@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import '../styles/site';
 import LoginContainer from './components/LoginContainer/LoginContainer';
+import HomeContainer from './components/HomeContainer/HomeContainer';
 
 class App extends React.Component {
     constructor(props) {
@@ -20,16 +21,14 @@ class App extends React.Component {
 
     clearSession() {
         localStorage.clear();
-        
+
     }
 
     render() {
         // If username is not set
         if (this.state.username) {
             return (
-                //<login_container />
-                <button onClick={this.clearSession()} >{this.state.username}</button>
-
+                <HomeContainer />
 
             );
         } else {
