@@ -5,13 +5,13 @@ class AvatarSelector extends React.Component {
         super(props);
 
         this.state = {
-                avatar_location: 'resources/img/avatars/'
+            avatarLocation: 'resources/img/avatars/'
         };
     }
 
     onAvatarClick (e) {
-            var avatarImage = this.state.avatar_location + e + '.png';
-            this.props.onAvatarSelect(avatarImage);
+        var avatarImage = this.state.avatarLocation + e + '.png';
+        this.props.onAvatarSelect(avatarImage);
     };
 
     render() {
@@ -21,7 +21,7 @@ class AvatarSelector extends React.Component {
                 <div class="flex-container-login">
                     <div class="avatar-selection" data-avatar="4.png"><img src="img/avatars/4.png"></img></div>
                     <div onClick={event => this.onAvatarClick(event.target.dataset.holder)}><img data-holder='4' src="img/avatars/4.png"></img></div>
-                    <div><img src="img/avatars/4.png"></img></div>
+                    <div><img src=""></img></div>
                     <div><img src="img/avatars/4.png"></img></div>
                     <div><img src="img/avatars/4.png"></img></div>
                     <div><img src="img/avatars/4.png"></img></div>

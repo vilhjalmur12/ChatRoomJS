@@ -3,7 +3,6 @@ import React from 'react';
 class PrivateMessageListItem extends React.Component {
     constructor(props) {
         super(props);
-
     }
 
     render() {
@@ -17,16 +16,16 @@ class PrivateMessageListItem extends React.Component {
                 <p className="mb-1 room-last-message hidden">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
                 <small>3 days ago</small>
                 <small className="text-muted room-option hidden">
-                <div className="btn-group dropleft">
-                    <button type="button" className="room-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <i className="fas fa-ellipsis-h"></i>
-                    </button>
-                    <div className="dropdown-menu">
-                        <li className="room-dropdown-action">Delete</li>
-                        <hr className="divider"></hr>
-                        <li className="room-dropdown-action">Delete</li>
+                    <div className="btn-group dropleft">
+                        <button type="button" className="room-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i className="fas fa-ellipsis-h"></i>
+                        </button>
+                        <div className="dropdown-menu">
+                            <li className="room-dropdown-action">Delete</li>
+                            <hr className="divider"></hr>
+                            <li className="room-dropdown-action">Delete</li>
+                        </div>
                     </div>
-                </div>
                 </small>
             </a>
         );

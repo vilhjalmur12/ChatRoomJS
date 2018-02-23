@@ -23,21 +23,28 @@
     "eslint": "^4.18.0",
     "eslint-loader": "^1.9.0",
     "eslint-plugin-react": "^7.7.0",
+    "file-loader": "^1.1.9",
     "html-webpack-plugin": "^2.30.1",
     "jest": "^22.4.0",
     "less": "^2.7.3",
     "less-loader": "^4.0.5",
     "path": "^0.12.7",
     "style-loader": "^0.20.2",
+    "url-loader": "^0.6.2",
     "webpack": "^3.11.0",
     "webpack-dev-server": "^2.11.1"
   },
   "dependencies": {
+    "express.io": "^1.1.13",
+    "jquery": "^3.3.1",
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
+    "react-bootstrap": "^0.32.1",
     "react-dom": "^16.2.0",
     "semantic-ui": "^2.3.0",
     "semantic-ui-less": "^2.3.0",
-    "semantic-ui-react": "^0.78.2"
+    "semantic-ui-react": "^0.78.2",
+    "socket.io": "^2.0.4",
+    "socket.io-client": "^2.0.4"
   }
 }

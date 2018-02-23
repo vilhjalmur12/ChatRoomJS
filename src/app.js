@@ -9,27 +9,35 @@ class App extends React.Component {
         super(props);
         this.state = {
             username: localStorage.getItem('username'),
-            avatar: localStorage.getItem('avatar')
+            avatar: localStorage.getItem('avatar'),
+            messages: [],
+            activeRoom: {},
+            users: []
         };
-
-
     }
 
     setAvatar(user) {
-        this.setState({ username: user });
+        this.setState({ username: user })
     }
 
     clearSession() {
         localStorage.clear();
+    }
 
+    login(user) {
+        let users = Object.assign([], this.state.users);
+        users.push(user);
+        this.setState({ users });
     }
 
     render() {
         // If username is not set
         if (this.state.username) {
             return (
-                <HomeContainer />
-
+                <HomeContainer
+                    fetchMessage={ message => this.sendMessage(message) }
+                    feeds={this.state.messages}
+                />
             );
         } else {
             return (
@@ -37,7 +45,6 @@ class App extends React.Component {
                 <LoginContainer />
             );
         }
-
     }
 }
 

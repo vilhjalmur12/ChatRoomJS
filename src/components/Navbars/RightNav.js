@@ -1,9 +1,25 @@
 import React from 'react';
+import CreateRoom from '../CreateRoom/CreateRoom';
 
 class RightNav extends React.Component {
     constructor(props) {
         super(props);
+    }
 
+    createRoom(room) {
+        this.props.createRoom(room);
+    }
+
+    viewRooms(e) {
+        this.props.viewRooms(e);
+    }
+
+    logout(e) {
+        console.log('Pre');
+        localStorage.setItem('username', '');
+        localStorage.getItem('avatar', '');
+        console.log('After');
+        window.location.reload();  
     }
 
     render() {
@@ -13,12 +29,11 @@ class RightNav extends React.Component {
                     <img src="img/logo-loading.png" width="30" height="30" className="d-inline-block align-top" alt=""></img>
                     ChatRoomJS
                 </a>
-
                 <ul className="nav navbar-nav navbar-right">
                     <li className="vdivide">
-                        <a onclick="friend_notify(2)" href="#about">View Rooms</a>
-                        <a href="#about" data-toggle="modal" data-target="#exampleModalCenter">Create Room</a>
-                        <a className="logout-button" href="#about">Logout</a>
+                        <a onClick={ e => this.viewRooms(e) } href="#">View Rooms</a>
+                        <CreateRoom createRoom={ room => this.createRoom(room) }/>
+                        <a onClick={ e => this.logout(e) } className="logout-button" href="#">Logout</a>
                     </li>
                 </ul>
             </nav>

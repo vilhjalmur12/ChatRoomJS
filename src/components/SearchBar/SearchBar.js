@@ -8,10 +8,10 @@ class SearchBar extends React.Component {
 
     render() {
         return (
-            <div class="input-group mb-3 left-search">
-                <input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="basic-addon2"></input>
-                <div class="input-group-append">
-                    <button class="btn btn-outline-secondary" type="button"><i class="fas fa-search"></i></button>
+            <div className="input-group mb-3 left-search">
+                <input type="text" className="form-control" placeholder="Search" aria-label="Search" aria-describedby="basic-addon2"></input>
+                <div className="input-group-append">
+                    <button className="btn btn-outline-secondary" type="button"><i className="fas fa-search"></i></button>
                 </div>
             </div>
         );

@@ -13,9 +13,6 @@ class LeftNav extends React.Component {
                     <li className="nav-item">
                         <a className="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Rooms</a>
                     </li>
-                    <li className="nav-item">
-                        <a className="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Messages</a>
-                    </li>
                 </ul>
             </nav>
         );
